@@ -8,6 +8,18 @@
 </head>
 <body>
     <h3>테스트용 제목</h3>
-    <span>이름 추가&변경용</span>
+    <span onmouseover="changeOn()" onmouseout="changeOut()">이름 추가&변경용</span>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+    function changeOn() {
+        const $text = $('span');
+        $text.text('★' + $text.text());
+    }
+    
+    function changeOut() {
+        const $text = $('span');
+        $text.text($text.text().replace('★', ''));
+    }
+</script>
 </html>
