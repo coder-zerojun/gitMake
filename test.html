@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>git branch 테스트용</title>
-    <style>
+        <style>
         span {
             color: aqua;
+        }
+        .git-header {
+            position: relative;
+        }
+
+        .git-header-sidemenu {
+            position: absolute;
+        }
+
+        .l {
+            right: 200px;
+        }
+
+        .s {
+            right: 100px;
         }
     </style>
 </head>
 <body>
+    <header class="git-header">
+        <div><h2>헤더</h2></div>
+        <div class="git-header-sidemenu l">로그인</div>
+        <div class="git-header-sidemenu s">회원가입</div>
+    </header>
     <h3>테스트용 제목</h3>
     <span onmouseover="changeOn()" onmouseout="changeOut()">이름 추가&변경용</span>
 </body>
